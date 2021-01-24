@@ -19,6 +19,6 @@ Research project and implementation of JPS+
 
 
 
-[Figure1]: ./Figures/Figure1.png "Nodes are not visited multiple times"
-[Figure2]: ./Figures/Figure2.png "Open list has way less nodes with JPS+"
-[Figure3]: ./Figures/Figure3.png "The framework I used"
+[Figure1]: Figures/Figure1.PNG "Nodes are not visited multiple times"
+[Figure2]: Figures/Figure2.PNG "Open list has way less nodes with JPS+"
+[Figure3]: Figures/Figure3.PNG "The framework I used"

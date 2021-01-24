@@ -318,6 +318,7 @@
     <ClCompile Include="framework\main.cpp" />
     <ClCompile Include="projects\App_NavMeshGraph\App_NavMeshGraph.cpp" />
     <ClCompile Include="projects\App_PathfindingAStar\App_PathfindingAStar.cpp" />
+    <ClCompile Include="projects\App_PathfindingJPSPlus\App_PathfindingJPSPlus.cpp" />
     <ClCompile Include="projects\App_Steering\Obstacle.cpp" />
     <ClCompile Include="projects\App_Steering\SteeringAgent.cpp" />
     <ClCompile Include="projects\App_Steering\SteeringBehaviors.cpp" />
@@ -345,6 +346,7 @@
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphAlgorithms\EAStar.h" />
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphAlgorithms\EBFS.h" />
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphAlgorithms\EEularianPath.h" />
+    <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphAlgorithms\EJPSPlus.h" />
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphUtilities\EGraphEditor.h" />
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphUtilities\EGraphRenderer.h" />
     <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphUtilities\EGraphVisuals.h" />
@@ -398,6 +400,7 @@
     <ClInclude Include="framework\EliteInterfaces\EIApp.h" />
     <ClInclude Include="projects\App_NavMeshGraph\App_NavMeshGraph.h" />
     <ClInclude Include="projects\App_PathfindingAStar\App_PathfindingAStar.h" />
+    <ClInclude Include="projects\App_PathfindingJPSPlus\App_PathfindingJPSPlus.h" />
     <ClInclude Include="projects\App_Steering\Obstacle.h" />
     <ClInclude Include="projects\App_Steering\SteeringAgent.h" />
     <ClInclude Include="projects\App_Steering\SteeringBehaviors.h" />

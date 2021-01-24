@@ -38,6 +38,7 @@ namespace Elite
 		template<class T_NodeType, typename = typename enable_if<! is_base_of<GraphNode2D, T_NodeType>::value>::type>
 		Elite::Color GetNodeColor(T_NodeType* pNode) const;
 		Elite::Color GetNodeColor(GraphNode2D* pNode) const;
+		Elite::Color GetNodeColor(GridTerrainNode* pNode) const;
 
 		template<class T_ConnectionType>
 		Elite::Color GetConnectionColor(T_ConnectionType* pConnection) const;
@@ -212,6 +213,21 @@ namespace Elite
 	inline Elite::Color EGraphRenderer::GetNodeColor(GraphNode2D* pNode) const
 	{
 		return pNode->GetColor();
+	}
+
+	inline Elite::Color EGraphRenderer::GetNodeColor(GridTerrainNode* pNode) const
+	{
+		switch (pNode->GetTerrainType())
+		{
+			case TerrainType::Mud:
+				return MUD_NODE_COLOR;
+				break;
+			case TerrainType::Water:
+				return WATER_NODE_COLOR;
+				break;
+		}
+
+		return  DEFAULT_NODE_COLOR;
 	}
 
 	template<class T_ConnectionType>

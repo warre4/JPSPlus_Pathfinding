@@ -6,13 +6,14 @@
 //-----------------------------------------------------------------
 //Application
 
-//#define UseJPSPlus
+#define UseJPSPlus
+
+#include "projects/App_NavMeshGraph/App_NavMeshGraph.h"
 
 #ifdef UseJPSPlus
 #include "projects/App_PathfindingJPSPlus/App_PathfindingJPSPlus.h"
 #else
 #include "projects/App_PathfindingAStar/App_PathfindingAStar.h"
-#include "projects/App_NavMeshGraph/App_NavMeshGraph.h"
 #endif
 
 
@@ -72,9 +73,9 @@ int main(int argc, char* argv[])
 #ifdef UseJPSPlus
 		myApp = new App_PathfindingJPSPlus();
 #else
-		//myApp = new App_PathfindingAStar();
-		myApp = new App_NavMeshGraph();
+		myApp = new App_PathfindingAStar();
 #endif
+		//myApp = new App_NavMeshGraph();
 
 		ELITE_ASSERT(myApp, "Application has not been created.");
 

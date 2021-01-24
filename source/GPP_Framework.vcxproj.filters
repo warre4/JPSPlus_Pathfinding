@@ -30,6 +30,7 @@
     <ClCompile Include="projects\App_Steering\Obstacle.cpp" />
     <ClCompile Include="projects\App_Steering\SteeringAgent.cpp" />
     <ClCompile Include="projects\App_Steering\SteeringBehaviors.cpp" />
+    <ClCompile Include="projects\App_PathfindingJPSPlus\App_PathfindingJPSPlus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -106,6 +107,8 @@
     <ClInclude Include="projects\App_Steering\SteeringAgent.h" />
     <ClInclude Include="projects\App_Steering\SteeringBehaviors.h" />
     <ClInclude Include="projects\App_Steering\SteeringHelpers.h" />
+    <ClInclude Include="projects\App_PathfindingJPSPlus\App_PathfindingJPSPlus.h" />
+    <ClInclude Include="framework\EliteAI\EliteGraphs\EliteGraphAlgorithms\EJPSPlus.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />
